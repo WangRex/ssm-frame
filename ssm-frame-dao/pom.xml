@@ -1,7 +1,5 @@
 <?xml version="1.0"?>
-<project
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
-	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>ssm-frame</groupId>
@@ -12,7 +10,10 @@
 	<artifactId>ssm-frame-dao</artifactId>
 	<name>ssm-frame-dao</name>
 	<url>http://maven.apache.org</url>
+
+	<!-- pom属性配置 -->
 	<properties>
+		<main.basedir>${basedir}/../</main.basedir>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
 	<build>
@@ -33,6 +34,11 @@
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
 			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>ssm-frame-bean</groupId>
+			<artifactId>ssm-frame-bean</artifactId>
+			<scope>${main.scope}</scope>
 		</dependency>
 	</dependencies>
 </project>
